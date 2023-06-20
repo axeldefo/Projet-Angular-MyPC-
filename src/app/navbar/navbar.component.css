@@ -1,0 +1,100 @@
+
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+nav {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  li {
+    display: inline-block;
+  }
+
+  li a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ffffff;
+  }
+  
+  li a.active::after, li a:hover::after {
+    content: "";
+    height: 3px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    bottom: -1px;
+    background-color: yellow;
+  }
+  
+  .search {
+    position: relative;
+  }
+  
+  .search form {
+    display: inline-block;
+  }
+  
+  .search input[type="text"] {
+    border: 1px solid #cacaca;
+    border-radius: 20px;
+    padding: 8px 16px;
+  }
+  
+  .search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+  }
+  
+  .search button i {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .search input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ccc;
+  }
+  
+  nav ul li {
+    margin: 0 10px; /* Ajout de la propriété margin */
+  }
+  #logo{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+
+    /* or 292% */
+    letter-spacing: 0.04em;
+
+    background: linear-gradient(270.34deg, #000000 15.69%, #F4DF71 103.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .fa-user,
+.fa-shopping-cart {
+  vertical-align: middle;
+}

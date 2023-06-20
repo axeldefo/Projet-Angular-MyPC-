@@ -1,0 +1,139 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: center;
+  height: 50px;
+  background: linear-gradient(90deg, #F4DF71 -1.25%, #000000 101.32%);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 50%, 100% 100%, 0 100%, 20px 50%);
+  padding: 0 20px;
+}
+
+.banner h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.triangle-left,
+.triangle-right {
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin-top: -2px; /* ajoute une marge négative pour chevaucher légèrement le fond */
+}
+
+.triangle-left {
+  border-top: 31.5px solid transparent;
+  border-right: 20px solid #ffffff;
+  border-bottom: 31.5px solid transparent;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.triangle-right {
+  border-top: 31.5px solid transparent;
+  border-left: 20px solid #ffffff;
+  border-bottom: 31.5px solid transparent;
+  right: 0;
+  transform: rotate(180deg);
+}
+  
+  
+  .reviews-container {
+    width: 98%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .reviews-scroll {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 -10px 0 calc(300px + 20px);
+  }
+  
+  .reviews-list {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    margin-left: 630px;
+  }
+  
+  
+  .review {
+    display: inline-block;
+    width: 300px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    height: 106px; /* hauteur maximale de 3 lignes */
+    overflow: hidden;
+    text-overflow: ellipsis; /* remplace le texte excédentaire par des points de suspension */
+    -webkit-line-clamp: 3; /* limite le nombre de lignes à 3 */
+   
+   
+  }
+  
+  .review-image {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .review-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .review-info {
+    overflow: hidden;
+  }
+  
+  .review-info h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .review-stars {
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .star:last-child {
+    margin-right: 0;
+  }
+  
+  .fa-star {
+    color: #ddd;
+  }
+  
+  .filled {
+    color: #F4DF71;
+  }
+  
+  .review-info p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  

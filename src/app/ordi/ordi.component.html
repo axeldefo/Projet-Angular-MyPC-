@@ -1,0 +1,35 @@
+
+<div class="banner-container">  
+    <div class="banner">
+        <div class="triangle-left"></div>
+        <h2>Nouveautés</h2>
+        <div class="triangle-right"></div>
+    </div>
+</div>
+
+<div class="ordinateurs">
+    <div class="ordinateur" *ngFor="let ordinateur of ordinateurs">
+      <div class="card">
+        <div class="new-banner">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NEW</div>
+        <div class="prix">{{ ordinateur.prix }}€</div>
+        <img class="image" [src]="'../../assets/' + ordinateur.nom + '.png'" alt="{{ ordinateur.nom }}">
+        <div class="infos">
+          <div class="nom-marque">{{ ordinateur.nom }}, {{ ordinateur.marque }}</div>
+          <div class="processeur-stockage">
+            <p>{{ ordinateur.system.cpu.marque }} {{ ordinateur.system.cpu.nom }}, {{ ordinateur.system.hdd.capacite }} Go</p>
+          </div>
+          <div class="ram-ecran">
+            <p>{{ ordinateur.system.ram }} Go, {{ ordinateur.ecran.taille ? ordinateur.ecran.taille + ' pouces' : 'Non disponible' }}</p>
+          </div>
+          <div class="boutons">
+            <button class="details" (click)="voirDetails(ordinateur)"> VIEW DETAILS</button>
+            <div class="d-flex align-items-center" (click)="ajouterAuPanier(ordinateur)"><fa-icon [icon]="faShoppingCart"></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+     

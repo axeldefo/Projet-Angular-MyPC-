@@ -1,0 +1,105 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="card">
+    <div class="image-container">
+      <div class="prix" style="color : red">A partir de {{ prix }} €</div>
+      <img class="image" [src]="'../../assets/' + ordi.nom + '.png'" alt="{{ ordi.nom }}">
+      <div class="icones">
+        <div class="slider">
+          <i class="fas fa-chevron-left"></i>
+          <span class="slider-dots">
+            <i class="fas fa-circle active"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+            <i class="fas fa-circle"></i>
+          </span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <i class="fas fa-shopping-cart panier-icon" (click)="panier()"></i>
+      </div>
+      
+      <div class="computer-features">
+        <div class="feature">
+          <div class="label">Stockage</div>
+          <div class="value">{{ ordi.system.hdd.capacite }} GB</div>
+        </div>
+        <div class="feature">
+          <div class="label">RAM</div>
+          <div class="value">{{ ordi.system.ram }} GB</div>
+        </div>
+        <div class="feature">
+          <div class="label">Processeur</div>
+          <div class="value">{{ ordi.system.cpu['frequence-max'] }} GHz</div>
+        </div>
+        <div class="feature">
+          <div class="label">Écran</div>
+          <div class="value">{{ ordi.ecran.taille }}"</div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="infos">
+     
+      <div class="etoiles">
+        <i class="fas fa-star star-icon"></i>
+        <i class="fas fa-star star-icon"></i>
+        <i class="fas fa-star star-icon"></i>
+        <i class="fas fa-star star-icon"></i>
+        <i class="far fa-star star-icon"></i>
+      </div>
+      
+      <div class="nom-marque">{{ ordi.marque }}, {{ ordi.nom }}</div>
+
+      <div class="description"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus tempore ea qui laboriosam nostrum obcaecati quidem, odio, quia non tenetur iste voluptate a repudiandae, cupiditate quos? Facilis hic quos ipsa.</p></div>
+      <div class="caracteristiques">
+        <div class="caracteristique">
+          <div class="label">Stockage</div>
+          <div class="barre">
+            <div class="cercle"></div>
+          </div>
+          <div class="valeur">{{ selectedStockage }} GB</div>
+        </div>
+        <div class="caracteristique">
+          <div class="label">RAM</div>
+          <div class="barre">
+            <div class="cercle"></div>
+          </div>
+          <div class="valeur">{{ selectedRam }} GB</div>
+        </div>
+        <div class="caracteristique">
+          <div class="label">Processeur</div>
+          <div class="barre">
+            <div class="cercle"></div>
+          </div>
+          <div class="valeur">{{ selectedProcesseur }} GHz</div>
+        </div>
+      
+      <div class="caracteristiques">
+        <div class="caracteristique">
+          <div class="label">Écran</div>
+          <div class="barre">
+            <div class="cercle"></div>
+          </div>
+          <div class="valeur">{{ selectedEcran }}"</div>
+        </div>
+        <div class="caracteristique">
+          <div class="label">Système d'exploitation</div>
+          <select class="se" [(ngModel)]="selectedSE">
+            <option value="Windows">Windows</option>
+            <option value="Linux">Linux</option>
+            <option value="Fedora">Fedora</option>
+          </select>
+          <div class="se ">{{ selectedSE }}</div>
+        </div>
+      </div>
+      <div class="prix-container">
+        <div class="label">Prix &nbsp; &nbsp;</div>
+        <input id="prix" type="number" [(ngModel)]="prix" readonly>
+        <button class="button" (click)="ajouterAuPanier()">Panier +</button>
+        <button class="button" (click)="goBack()">Retour</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{
+    "/api": {
+      "target": "http://perso.univ-lemans.fr",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  }
+  

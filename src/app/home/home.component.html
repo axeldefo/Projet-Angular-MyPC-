@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="description">
+      <h1>Un ordinateur sur mesure</h1>
+      <p>Découvrez nos services de vente et de personnalisation de PC, accompagnés de formations sur les ordinateurs adaptées à tous les niveaux. <br>Profitez également de la livraison gratuite pour tous vos achats !</p>
+      <div class="buttons">
+        <button class="btn btn-primary">PERSONNALISER</button>
+        <button class="btn btn-secondary" (click)="openConnexion()">CONNEXION</button>
+      </div>
+    </div>
+    <div class="image">
+      <img src="../../assets/groupe.png" alt="Image des pc" height="450" width="680">
+    </div>
+  </div>
+  <div class="slider">
+    <i class="fas fa-chevron-left"></i>
+    <span class="slider-dots">
+      <i class="fas fa-circle active"></i>
+      <i class="fas fa-circle"></i>
+      <i class="fas fa-circle"></i>
+      <i class="fas fa-circle"></i>
+      <i class="fas fa-circle"></i>
+    </span>
+    <i class="fas fa-chevron-right"></i>
+  </div>
+  <app-ordi></app-ordi>
+<app-avis></app-avis>
+<app-footer></app-footer>

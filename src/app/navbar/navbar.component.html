@@ -1,0 +1,22 @@
+<nav>
+  <ul>
+    <li>
+      <a href="#" id="logo">
+        MYPC
+        <img src="../../assets/logo.png" alt="Logo" style="height: 30px;">
+      </a>
+    </li>
+    <li><a href="#">NOS PRODUITS</a></li>
+    <li><a href="#">PERSONNALISER</a></li>
+    <li><a href="#">BONS PLANS &amp; PROMOS</a></li>
+    <li><a href="#">APPRENDRE</a></li>
+    <li class="search">
+      <form>
+        <input type="text" placeholder="Nom, marque,...">
+        <button type="submit"><fa-icon [icon]="faSearch"></fa-icon></button>
+      </form>
+    </li>
+    <li><div class="d-flex align-items-center" (click)="openPanier()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="faShoppingCart"></fa-icon></div></li>
+    <li><div class="d-flex align-items-center" (click)="openConnexion()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="faUser"></fa-icon></div></li>
+  </ul>
+</nav>

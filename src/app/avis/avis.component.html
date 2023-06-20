@@ -1,0 +1,28 @@
+  <div class="banner-container">  
+    <div class="banner">
+        <div class="triangle-left"></div>
+        <h2>Avis des utilisateurs</h2>
+        <div class="triangle-right"></div>
+    </div>
+</div>
+  <div class="reviews-container">
+    <div class="reviews-scroll">
+      <div class="reviews-list">
+        <div class="review" *ngFor="let avis of listeAvis">
+          <div class="review-image">
+            <img [src]="avis.image" [alt]="avis.nom" />
+          </div>
+          <div class="review-info">
+            <h3>{{ avis.nom }}</h3>
+            <div class="review-stars">
+              <span class="star" *ngFor="let star of avis.stars">
+                <i class="fa fa-star" [ngClass]="{'filled': star}"></i>
+              </span>
+            </div>
+            <p>{{ avis.commentaire }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

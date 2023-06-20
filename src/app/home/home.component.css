@@ -1,0 +1,122 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: n0px;
+  position: relative; 
+  margin-left: 50px;
+}
+
+h1{
+    background: linear-gradient(90deg, #FFE03C 0%, #000000 81.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.description {
+  margin-right: 0px;margin-left: 0px;
+  margin-top: 100px;
+  font-weight: 500;
+  font-size: 20px;
+  width: 40%;
+}
+
+.image {
+  text-align: center;
+  margin: 02% 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  button {
+    width: 200px;
+    height: 70px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 0 20px 0 0;
+  }
+  
+  .btn-primary {
+    background: #ffffff;
+    border: 10px solid linear-gradient(90deg, #ffd600 0%, #000000 81.44%);
+    color: #000000;
+  }
+  
+  .btn-secondary {
+    color: #ffffff;
+    background: linear-gradient(90deg, #ffd600 0%, #000000 81.44%);
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #ffd600 0%, #000000 81.44%);
+    color: #ffffff;
+    width: 210px;
+    height: 75px;
+  }
+  
+  .btn-secondary:hover {
+    background: #ffffff;
+    border: 10px solid linear-gradient(90deg, #bea112 0%, #000000 81.44%);
+    color: #000000;
+    width: 210px;
+    height: 75px;
+  }
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%);
+  margin: 30px 0;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.slider-dots svg {
+  margin: 0 5px;
+  font-size: 1.5rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.slider-dots  .active {
+  color: #f6d328;
+}
+
+i.fas {
+    font-size: 2rem;
+    margin: 0 20px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .slider-dots svg:hover {
+  color: #f6d328;
+}
+
+.fa-chevron-left{
+    border: 10px solid linear-gradient(90deg, #ffd600 0%, #000000 81.44%);
+  }
+  
+.image img {
+    max-width: 100%; /* ajouter cette propriété pour réduire la taille de l'image */
+  }
